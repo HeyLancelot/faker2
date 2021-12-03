@@ -24,9 +24,9 @@ const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const notify = $.isNode() ? require('./sendNotify') : "";
 let cookiesArr = [], cookie = "", allMessage = "", message;
 const inviteCodes = [
-  `T0225KkcRh9P9FbRKUygl_UJcgCjVfnoaW5kRrbA@T0159KUiH11Mq1bSKBoCjVfnoaW5kRrbA`,
-  `T0225KkcRh9P9FbRKUygl_UJcgCjVfnoaW5kRrbA@T0159KUiH11Mq1bSKBoCjVfnoaW5kRrbA`,
-  `T0225KkcRh9P9FbRKUygl_UJcgCjVfnoaW5kRrbA@T0159KUiH11Mq1bSKBoCjVfnoaW5kRrbA`,
+  `T0205KkcO3R4qiGMYG-h14V8CjVfnoaW5kRrbA@T0225KkcRE0Q9lfUJBKgkqRZcQCjVfnoaW5kRrbA`,
+  `T0205KkcO3R4qiGMYG-h14V8CjVfnoaW5kRrbA@T0225KkcRE0Q9lfUJBKgkqRZcQCjVfnoaW5kRrbA`,
+  `T0205KkcO3R4qiGMYG-h14V8CjVfnoaW5kRrbA@T0225KkcRE0Q9lfUJBKgkqRZcQCjVfnoaW5kRrbA`,
 ]
 let reward = $.isNode() ? (process.env.JD_HEALTH_REWARD_NAME ? process.env.JD_HEALTH_REWARD_NAME : '') : ($.getdata('JD_HEALTH_REWARD_NAME') ? $.getdata('JD_HEALTH_REWARD_NAME') : '');
 const randomCount = $.isNode() ? 20 : 5;
