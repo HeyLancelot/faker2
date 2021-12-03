@@ -216,8 +216,8 @@ function shareCodesFormat() {
   return new Promise(async resolve => {
     $.newShareCodes = [];
     let inviteCodes = [
-      't_7LVGP8mopofh8AG0Q7E8AdoUJQ3Dik@zExA7lNc3HrJrbVuG3xRVMAdoUJQ3Dik@cvwWiz9o2evNHFdNk0oNbMAdoUJQ3Dik@8MQ6wrd9H0IAujNGUqzTAA',
-      't_7LVGP8mopofh8AG0Q7E8AdoUJQ3Dik@zExA7lNc3HrJrbVuG3xRVMAdoUJQ3Dik@cvwWiz9o2evNHFdNk0oNbMAdoUJQ3Dik@8MQ6wrd9H0IAujNGUqzTAA'
+      'iX7lnfg3z3bb80agdSAYJw@NvGuBJi4PBXei-56xJnB_cAdoUJQ3Dik@bwogBSA8wfSjn7bXqRrZmw',
+      'iX7lnfg3z3bb80agdSAYJw@NvGuBJi4PBXei-56xJnB_cAdoUJQ3Dik@bwogBSA8wfSjn7bXqRrZmw'
     ];
     if ($.shareCodesArr[$.index - 1]) {
       $.newShareCodes = $.shareCodesArr[$.index - 1].split('@');
