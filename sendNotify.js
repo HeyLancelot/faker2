@@ -166,7 +166,7 @@ let isLogin = false;
 if (process.env.NOTIFY_SHOWNAMETYPE) {
     ShowRemarkType = process.env.NOTIFY_SHOWNAMETYPE;
 }
-async function sendNotify(text, desp, params = {}, author = '\n\n本通知 By ccwav Mod') {
+async function sendNotify(text, desp, params = {}, author = '') {
     console.log(`开始发送通知...`);
     try {
         //Reset 变量
@@ -1208,7 +1208,7 @@ async function sendNotify(text, desp, params = {}, author = '\n\n本通知 By cc
                 }
 
                 if (allCode) {
-                    desp += '\n' + '\n' + "ccwav格式化后的互助码:" + '\n' + allCode;
+                    desp += '\n' + '\n' + "互助码:" + '\n' + allCode;
                 }
             }
         }
@@ -1410,7 +1410,7 @@ function getRemark(strRemark) {
     }
 }
 
-async function sendNotifybyWxPucher(text, desp, PtPin, author = '\n\n本通知 By ccwav Mod') {
+async function sendNotifybyWxPucher(text, desp, PtPin, author = '') {
 
     try {
         var Uid = "";
