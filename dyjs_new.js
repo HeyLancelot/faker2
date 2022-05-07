@@ -2,14 +2,14 @@
 //获取多个header成功后再定时循环执行脚本任务,间隔时间最好在30s以上,每天稳定在10000音符左右
 //且刷且珍惜,刷的别太嚣张,说不定过几天就封了
 
-// [mitm]
-// hostname = *.snssdk.com,*.amemv.com
+[mitm]
+hostname = *.snssdk.com,*.amemv.com
 
-// [task_local]
-// */30 * * * * * https://raw.githubusercontent.com/passerby-b/Script/master/dyjs_new.js, tag=抖音极速版刷音符, enabled=true
+[task_local]
+*/30 * * * * * https://raw.githubusercontent.com/HeyLancelot/faker2/main/dyjs_new.js, tag=抖音极速版刷音符, enabled=true
 
-// [rewrite_local]
-// luckycat/aweme/v1/task/done/read? url script-request-header https://raw.githubusercontent.com/passerby-b/Script/master/dyjs_new.js
+[rewrite_local]
+luckycat/aweme/v1/task/done/read? url script-request-header https://raw.githubusercontent.com/HeyLancelot/faker2/main/dyjs_new.js
 
 
 
